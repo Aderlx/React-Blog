@@ -8,7 +8,7 @@ import { Card, Row, Col } from 'antd'
 import "./index.less"
 
 // 自定义组件
-import { Profile } from './Profile';
+import { Profile } from './Profile/Index';
 
 
 

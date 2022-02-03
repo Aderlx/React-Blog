@@ -4,9 +4,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // 引入全局 css
 import "./App.less"
 
-import { LayoutComponent } from '@/containers/Layout';
-import { BlogList } from '@/containers/BlogList'
-import { ContentComponent } from '@/containers/Layout/Content';
+import { LayoutComponent } from '@/containers/Layout/Index';
+import { BlogList } from '@/containers/BlogList/Index'
+import { ContentComponent } from '@/containers/Layout/Content/Index';
 
 const Home = () => {
   return (

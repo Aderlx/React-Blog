@@ -5,9 +5,9 @@ import { Outlet } from 'react-router-dom';
 import { Layout } from 'antd';
 
 // 引入 Header
-import { HeaderComponent } from './Header';
+import { HeaderComponent } from './Header/Index';
 // 引入 Content
-import {ContentComponent} from './Content';
+import {ContentComponent} from './Content/Index';
 
 // 引入 less
 import './index.less'

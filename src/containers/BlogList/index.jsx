@@ -10,7 +10,7 @@ import { useHttpRequest } from "@/utils/Requests";
 // 公告消息组件
 import CommonMessage from "@/components/CommonMessage";
 
-import { CardTitle } from './CardTitle';
+import { CardTitle } from './CardTitle/Index';
 // css
 import "./index.less"
 
@@ -35,12 +35,13 @@ export const BlogList = () => {
             setData(response.data);
         }
     }, [response]);
+    console.log(data)
     return (
         data.map((item, index) => {
             return (
                 <Card key={index} className="P-cardBlogs" >    
                  <Meta
-                title={<CardTitle />} />
+                title={<CardTitle  {...item} />} />
               </Card>
             )
         })
