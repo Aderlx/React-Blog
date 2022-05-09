@@ -28,13 +28,14 @@ module.exports = Mock.mock('/blogs', 'get', (options) => {
                         "id": 1,
                         "name": "category"
                     }
-
                 ],
                 "tags": [{
                     "id": 1,
                     "name": "tage"
                 }],
-                "createdDate": "2022-01-31"
+                "createdDate": "2022-01-31",
+               
+                
 
             },
             // {

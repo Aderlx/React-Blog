@@ -5,7 +5,7 @@ import { Card, Row, Col } from 'antd'
 import { Link } from 'react-router-dom';
 
 // http请求组件
-import { useHttpRequest } from "@/utils/Requests";
+import { useHttpRequest } from "@/utils/Request";
 
 // 公告消息组件
 import CommonMessage from "@/components/CommonMessage";
@@ -39,12 +39,13 @@ export const BlogList = () => {
     return (
         data.map((item, index) => {
             return (
-                <Card key={index} className="P-cardBlogs" >    
-                 <Meta
-                title={<CardTitle  {...item} />} />
-              </Card>
+                <Card key={index} className="P-cardBlogs" >
+                    <Meta
+                        title={<CardTitle  {...item} />} />
+                    <div className="P-preview" dangerouslySetInnerHTML={{ __html: item.contentHtml }} />
+                </Card>
             )
         })
-    ) 
+    )
 
 }

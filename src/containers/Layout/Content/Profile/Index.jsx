@@ -11,7 +11,7 @@ import { MailOutlined, GithubOutlined } from "@ant-design/icons";
 import "./index.less";
 
 // http请求组件
-import { useHttpRequest } from "@/utils/Requests";
+import { useHttpRequest } from "@/utils/Request.jsx";
 
 // 公告消息组件
 import CommonMessage from "@/components/CommonMessage";
@@ -66,7 +66,7 @@ export const Profile = () => {
             <Row justify="center">
                 <Avatar
                     size={120}
-                    src={<Image src={data.avatar_url} />}
+                    src={<Image preview={false} src={data.avatar_url} />}
                 />
             </Row>
 
